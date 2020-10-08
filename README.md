@@ -1,0 +1,1 @@
+# Sample golang app with OCP4

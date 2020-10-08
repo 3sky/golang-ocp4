@@ -1,0 +1,6 @@
+node('golang:1.14') {
+  stage 'build'
+  openshiftBuild(buildConfig: 'golang-opc4', showBuildLogs: 'true')
+  stage 'deploy'
+  openshiftDeploy(deploymentConfig: 'golang-opc4')
+}
